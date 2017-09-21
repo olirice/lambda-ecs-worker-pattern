@@ -386,7 +386,7 @@ def update_lambda_function():
         '    --zip-file fileb://./' + ZIPFILE_NAME +
         '    --role ' + role_arn +
         '    --handler ' + LAMBDA_FUNCTION_NAME + '.handler' +
-        '    --runtime nodejs' +
+        '    --runtime nodejs6.10' +
         AWS_CLI_STANDARD_OPTIONS,
         capture=True
     )
